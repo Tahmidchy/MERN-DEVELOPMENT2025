@@ -1,0 +1,607 @@
+/* Body CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/* Hero Section CSS */
+
+.hero{
+    min-width: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    align-items: center;
+    display: flex;
+    padding: 170px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    line-height: 1.2;
+}
+
+.hero-content p{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    max-width: 600px;
+    margin: 0 25 auto;
+    line-height: 1.5;
+    
+}
+
+/* Button CSS */
+.ctn-button{
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+/* Button Hover Effect */
+.ctn-button:hover{
+    background-color: #e75a2f;
+}
+
+/* Hero Section Responsive CSS */
+
+@media (max-width: 768px){
+    .hero-content h1{
+        font-size: 2rem;
+    }
+    .hero-content p{
+        font-size: 1rem;
+    }
+    .cta-button{
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+    .hero{
+        align-items: center;
+        background-position: center;
+    }
+    .hero-content{
+        padding: 0 20px;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px){
+    .hero-content h1{
+        font-size: 1.5rem;
+    }
+    .cta-button{
+        padding: 6px 12px;
+        font-size: 1rem;
+    }
+    .hero{
+        align-items: center;
+        background-position: center;
+    }
+    .hero-content{
+        padding: 0 10px;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 350px){
+    .hero-content h1{
+        font-size: 1.2rem;
+    }
+    .cta-button{
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+    .hero{
+        align-items: center;
+        background-position: center;
+    }
+    .hero-content{
+        padding: 0 5px;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
+
+/* About Section CSS */
+
+.about-section{
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+
+}
+.about-section h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #252525;
+    padding: 15px 20px;
+    text-align: center;
+}
+.about-section p{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 1.5;
+    padding: 15px 20px;
+
+}
+.about-section img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* About Section Responsive CSS */
+@media (max-width: 768px){
+    .about-section{
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 10px;
+
+    }
+    .about-section h2{
+        font-size: 2rem;
+    }
+    .about-section p{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 480px){
+    .about-section{
+        grid-template-columns: 1fr;
+        padding: 10px;
+        gap: 5px;
+    }
+    .about-section h2{
+        font-size: 1.5rem;
+    }
+    .about-section p{
+        font-size: 0.9rem;
+    }
+    
+}
+
+@media (max-width: 350px){
+    .about-section{
+        grid-template-columns: 1fr;
+        padding: 5px;
+        gap: 2px;
+    }
+    .about-section h2{
+        font-size: 1.2rem;
+    }
+    .about-section p{
+        font-size: 0.8rem;
+    }
+    
+}
+
+
+
+/* Skill Section CSS */
+
+.skills-section{
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+
+}
+.skills-header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.skills-header h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #252525;
+    margin-bottom: 15px;
+}
+.skills-header p{
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.skill{
+    flex: 1 1 300px;
+    max-width: 400px;
+    background-color: #f4f4f4;
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+.skill:hover{
+    transform: translateY(-5px);
+}
+.skill-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.skill-icon{
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    font-size: 2rem;
+}
+.skill-title h3{
+    font-size: 1.5rem;
+    color: #252525;
+    font-weight: 600;
+}
+.skill-progress{
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.progress-bar{
+    height: 100%;
+    background-color: #ff5722;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    transition: width 0.3s ease;
+}
+/* Skill Section Responsive CSS */
+@media (max-width: 768px){
+    .skills-section{
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 10px;
+    }
+    .skills-header h2{
+        font-size: 2rem;
+    }
+    .skills-header p{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 480px){
+    .skills-section{
+        grid-template-columns: 1fr;
+        padding: 10px;
+        gap: 5px;
+    }
+    .skills-header h2{
+        font-size: 1.5rem;
+    }
+    .skills-header p{
+        font-size: 0.9rem;
+    }
+    
+}
+@media (max-width: 350px){
+    .skills-section{
+        grid-template-columns: 1fr;
+        padding: 5px;
+        gap: 2px;
+    }
+    .skills-header h2{
+        font-size: 1.2rem;
+    }
+    .skills-header p{
+        font-size: 0.8rem;
+    }
+    
+}
+
+
+/* Contact Section CSS */
+
+.contact-section{
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+ .contact-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 40px;
+            margin: 0 auto;
+            max-width: 1200px;
+            text-align: center;
+        }
+.contact-form{
+    flex: 1 1 400px;;
+}
+.contact-info{
+    flex: 1 1 400px;
+    background: #2ecc71;
+    padding: 40px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.section-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.section-title h2{
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+.section-title p{
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.5;
+}
+.from-group{
+    margin-bottom: 25px;
+}
+ label{
+    font-size: 1.1rem;
+    display: block;
+    margin: 8px;
+    color: #666;
+    font-weight: 500;
+}
+ .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 20px;
+            border: 2px solid #eee;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #2ecc71;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+ .submit-btn {
+            background: #2ecc71;
+            color: white;
+            padding: 15px 40px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background: #27ae60;
+        }
+
+        .info-item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .info-item div{
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            margin: 0 20px;
+            padding: 20px;
+        }
+
+        .info-item i {
+            font-size: 24px;
+            margin-right: 20px;
+            width: 40px;
+            text-align: center;
+        }
+
+        .info-item h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 5px;
+        }
+    .social-links{
+        margin-top: 40px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        background: #2ecc71;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        color: white;
+        font-size: 1.5rem;
+        transition: background 0.3s ease;
+    }
+    .social-links a {
+            color: white;
+            font-size: 20px;
+            transition: transform 0.3s ease;
+            
+        }
+
+        .social-links a:hover {
+            transform: translateY(-3px);
+        }
+        .social-links i {
+            margin: 0 10px;
+        }
+        .social-links:hover {
+            background: #27ae60;
+        }
+/* Contact Section Responsive CSS */
+@media (max-width: 768px) {
+            .contact-wrapper {
+                padding: 30px;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .info-item h3 {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-section {
+                padding: 50px 15px;
+            }
+            
+            .contact-wrapper {
+                padding: 20px;
+            }
+            
+            .info-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .info-item i {
+                margin-bottom: 10px;
+            }
+        }
+@media (max-width:350px){
+    .contact-section{
+        padding: 40px 10px;
+    }
+    .contact-wrapper{
+        padding: 20px;
+    }
+    .info-item h3{
+        font-size: 1.5rem;
+    }
+    .info-item p{
+        font-size: 1rem;
+    }
+
+    .section-title h2{
+        font-size: 2rem;
+    }
+    .section-title p{
+        font-size: 1rem;
+    }
+    .submit-btn{
+        padding: 15px 30px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Footer CSS */
+.footer{
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-content p{
+    font-size: 1rem;
+    margin: 0;
+    color: #333;
+}
+/* Footer Responsive CSS */
+@media (max-width: 768px){
+    .footer{
+        padding: 15px 0;
+    }
+    .footer-content p {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 480px){
+    .footer{
+        padding: 10px 0;
+    }
+    .footer-content p {
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 350px){
+    .footer{
+        padding: 5px 0;
+    }
+    .footer-content p {
+        font-size: 0.7rem;
+    }
+}
+
+
+
